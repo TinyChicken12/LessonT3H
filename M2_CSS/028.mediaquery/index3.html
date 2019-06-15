@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <style type="text/css">
+        .wrap {
+            overflow: auto;
+        }
+
+        #sidebar {
+            float: left;
+            width: 20%;
+        }
+
+        #main{
+            float: right;
+            background: green;
+            color: white;
+            width: 80%;
+        }
+
+        @media screen and (max-width: 500px) {
+            #sidebar {
+                float: none;
+                width: 100%
+            }
+
+            #main {
+                float: none;
+                width: 100%;
+                background-color: yellow;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class = "wrap">
+    <div id="sidebar">
+        <ul>
+            <li>The gioi</li>
+            <li>Thoi su</li>
+            <li>Van hoa</li>
+            <li>Giai tri</li>
+            <li>The thao</li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h1>Noi dung chinh cua trang web</h1>
+        <p>Noi dung 1</p>
+        <p>Noi dung 2</p>
+        <p>Noi dung 3</p>
+        <p>Noi dung 4</p>
+        <p>Noi dung 5</p>
+    </div>
+
+</div>
+</body>
+</html>

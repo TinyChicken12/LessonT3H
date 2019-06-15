@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<pre>
+    Show Hide
+    show(speed, callback);
+    hide(speed, callback);
+</pre>
+
+<div class="target" style="padding: 40px; background: orange">
+    Nội dung thẻ div
+</div>
+
+<div style="margin: 20px">
+    <button id="show">Toggle</button>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $("#show").click(function () {
+            $(".target").toggle(1000, function () {
+            });
+        });
+
+    });
+</script>
+</body>
+</html>

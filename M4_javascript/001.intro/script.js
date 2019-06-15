@@ -1,0 +1,1 @@
+alert("Nhung javascript tu file ben ngoai");

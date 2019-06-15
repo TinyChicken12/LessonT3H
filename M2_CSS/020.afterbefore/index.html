@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <style type="text/css">
+      .container {
+          background: orange;
+          padding: 20px;
+          margin: 30px auto;
+          width: 900px;
+      }
+
+        .row {
+            background: green;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .row::before {
+            content :'Noi dung them truoc cot';
+            display: block;
+            clear: both;
+        }
+
+        .row::after {
+            content: 'Noi dung them sau cot';
+            display: block;
+            clear: both;
+        }
+
+        .col1 {
+            padding: 20px 0;
+            float: left;
+            width: 50%;
+            background: violet;
+        }
+
+      .col2 {
+          padding: 20px 0;
+          float: right;
+          width: 50%;
+          background: violet;
+      }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+    <div class="col1">cot 1</div>
+    <div class="col2">cot 2</div>
+    </div>
+</div>
+</body>
+</html>

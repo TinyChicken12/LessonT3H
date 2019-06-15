@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #box-model {
+            background: orange;
+            height: 200px;
+            width: 300px;
+            margin-bottom: 50px;
+        }
+
+        #parent {
+            background: orange;
+            height: 200px;
+            width: 300px;
+        }
+
+        #child {
+            background: green;
+/*
+            height: 50%;
+*/
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<h1>Height và Width trong html,css</h1>
+<pre>
+    Khi sử dụng đơn vị % thì kích thước của thẻ con tỉ lệ với thẻ trực tiếp chứ nó (thẻ mẹ)
+    Vd thẻ mẹ có kích thước là 500px width thì thẻ con có kích thước là 50% thì sẽ có kích thước
+    theo đơn vị px là: 250px;
+</pre>
+<div id="box-model">
+    Nd the div
+</div>
+<div id="parent">
+    <div id="child">
+        Child
+    </div>
+</div>
+</body>
+</html>
