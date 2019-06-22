@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="in1">
+<input id="in2">
+<p id="target"></p>
+<button type="button" id="btn" onclick="bai2()">Excute</button>
+<script>
+    function bai2() {
+        var s1 = document.getElementById("in1").value;
+        var s2 = document.getElementById("in2").value;
+        var res = s1.concat(s2);
+        document.getElementById("target").innerHTML = res;
+            }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình Tìm kiếm tên trong chuỗi họ tên, nếu có thì xuất ra tên này đã nhập</p>
+<input id="b1">
+<input id="b2">
+<button type="button" onclick="bai12()">bai 12</button>
+<p id="target"></p>
+<script>
+    function bai12() {
+        var str = document.getElementById("b1").value;
+        var char = document.getElementById("b2").value;
+        var arr = str.split(" ");
+        var res = arr[(arr.length -1)];
+        if (res == char) {
+            alert("Ten nay da nhap")
+        }
+    }
+</script>
+</body>
+</html>

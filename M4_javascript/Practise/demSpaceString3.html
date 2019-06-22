@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<input id="b1">
+<button type="button" onclick="bai1()">bai 1</button>
+<script>
+    function bai1() {
+        var str = document.getElementById("b1").value;
+        var str2 = str.replace(/ /g, "");
+        var num = str.length - str2.length;
+        alert("The number of space is: "+ num);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input id="b1">
+<button type="button" onclick="bai6()">bai 6</button>
+<body>
+<script>
+    function bai6() {
+        var  str =  document.getElementById("b1").value;
+        var splitStr = str.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+        }
+        str = splitStr.join(' ');//Cái method quyết định mà t chưa biết. Cái này phân cách bởi dấu cách
+        alert(str);
+    }
+</script>
+</body>
+</html>

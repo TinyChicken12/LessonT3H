@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function People(name, age, weight) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.eat = function (monan) {
+            console.log(`Em dang an ${monan}`)
+        }
+    }
+    var Kien = new People('Kien', 18, 48);
+    console.log(Kien);
+
+    /*function Animal() {
+        this.name = 'pig';
+        this.age = 10;
+        this.weight = 20;
+        this.an = function (doAn) {
+            console.log(`${this.name} dang an ${doAn}`)
+        }
+    }
+    var pig = new Animal();
+    //console.log(pig);
+
+    function Fish(){
+        this.name = 'dolphin';
+        this.age = '';
+        this.weight = '200';
+        this.eat = function (monAn) {
+            console.log(`${this.name} dang an ${monAn}`)
+        }
+    }
+    var dolphin = new Fish();
+    console.log(dolphin);*/
+</script>
+</body>
+</html>

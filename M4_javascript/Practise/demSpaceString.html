@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    var str = "Hom nay toi rat khoe!    ";
+    var arr = str.split("");
+    var count = 0;
+    for (var i = 0 ; i < arr.length; i++) {
+        var txt = arr[i];
+        if (txt == " ") {
+            count ++;
+        }
+    }
+    alert("Number of space is: " + count)
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var hoaLaToi = {
+        ten: 'Hoa',
+        tuoi: 22,
+        queQuan: 'Thai Nguyen',
+        an : function (monan) {
+            console.log(`Em đang ăn ${monan}`)
+        }
+    }
+    //console.log(hoaLaToi);
+
+    var hueLaToi = {
+        ten: 'Hue',
+        tuoi: 22,
+        canNang: 48,
+        queQuan: 'Thai Nguyen',
+        hoc: function (monHoc) {
+            this.canNang ++; //This.: Nói đến thuộc tính của chính object đó, ở đây là lấy thuoocj tính canNang của object hueLaToi
+            console.log(`Toi dang hoc mon: ${monHoc}`)
+        }
+    }
+    console.log(hueLaToi);
+
+    var Kien = {
+        ten: 'Ta Ngoc Kien',
+        tuoi: 22,
+        queQuan: 'Thai Binh',
+        trangThaiHonNhan: 'single',
+        canNang: 48,
+        laiXe : function (loaiXe) {
+            console.log(`Toi dang lai xe: ${loaiXe}`)
+        }
+    }
+    console.log(Kien)
+</script>
+</body>
+</html>

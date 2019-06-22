@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình kiểm tra xem chuỗi có kí tự số hay không, nếu có tách thành mảng số chuỗi riêng</p>
+<input id="b1">
+<button type="button" onclick="bai12()" value="An 18 tuoi, co 1 chi.">bai 12</button>
+<p id="target"></p>
+<script>
+    function bai12() {
+        var str = document.getElementById("b1").value;
+        var arr = str.split("");
+        var res = [];
+        for (var i = 0; i < arr.length; i++) {
+            var num = parseFloat(arr[i]);
+            if (!isNaN(num)){
+                res.push(arr[i]);
+                //console.log("a")
+            }
+        }
+        //console.log(res);
+        document.getElementById("target").innerText = res;
+    }
+</script>
+</body>
+</html>

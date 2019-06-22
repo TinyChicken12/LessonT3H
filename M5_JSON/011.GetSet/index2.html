@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<pre>
+    Text method: html(): Để lấy html
+    text("something"): để set "something" cho element
+</pre>
+<p id="source">Test method text</p>
+<p id="target">Test method set</p>
+<button type="button" id="move">Click me</button>
+<script>
+    $(document).ready(function () {
+        $("#move").on("click",function () {
+            //Lay ndung vban
+            var txt = $("source").html();
+            console.log(txt);
+
+            //set ndung vban
+            $("#target").html(txt);
+        })
+    })
+</script>
+</body>
+</html>

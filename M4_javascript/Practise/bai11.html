@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình nhập vào chuỗi s1, s2; vị trí xuất hiện của chuỗi s2 trong s1 là?</p>
+<input id="b1">
+<input id="b2">
+<button type="button" onclick="bai11()">bai 11</button>
+<p id="target"></p>
+<script>
+    function bai11() {
+        var str = document.getElementById("b1").value;
+        var char = document.getElementById("b2").value;
+        alert(str.indexOf(char));
+    }
+</script>
+</body>
+</html>

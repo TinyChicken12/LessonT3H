@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình nhập 1 chuỗi và tách từ bắt đầu từ đâu cho đến hết chuỗi từ chuỗi đã cho</p>
+<p>Nhap chuoi: <input id="b1"></p>
+<p>Nhap vi tri can tach: <input id="b2"></p>
+<button type="button" onclick="bai15()">bai 15</button>
+<p id="target"></p>
+<script>
+    function bai15() {
+        var str = document.getElementById("b1").value;
+        var str2 = document.getElementById("b2").value;
+        var pos = str.indexOf(str2);
+        var res = str.slice(pos);
+        document.getElementById("target").innerText = res;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình Kiểm tra xem chuỗi có đối xứng hay không</p>
+<p>Nhap chuoi: <input id="b1"></p>
+<button type="button" onclick="bai16()">bai 16</button>
+<p id="target"></p>
+<script>
+    function bai16() {
+        var str = document.getElementById("b1").value;
+        var arr = str.split("");
+        var count = 0;
+        for (var i = 0; i < arr.length - 1; i++) {
+            if (arr[i] != arr[arr.length - 1 - i]){
+               count ++;
+            }
+        }
+        if (count == 0){
+            alert("Chuỗi đối xứng!")
+        }
+        else {
+            alert("Chuỗi không đối xứng!")
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<body>
+<button type="button" id="dog">Con chó</button>
+<button type="button" id="chicken">Con gà</button>
+<button type="button" id="pig">Con lợn</button>
+<button type="button" id="cow">Con bò</button>
+<h2></h2>
+<img id="img1">
+<script>
+    $(document).ready(function () {
+        $('#dog').hover(function () {
+            $('h2').text($(this).text());
+            $('#img1').attr("src", "https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg");
+            //$('#img2').attr("src", "https://www.bbcgoodfood.com/sites/default/files/styles/push_item/public/chicken-thumb.jpg?itok=tsEf4fFb");
+            //$('#img3').attr("src", "https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/pig-fence.ngsversion.1396530611778.adapt.1900.1.jpg");
+            //$('#img4').attr("src", "https://cdn.britannica.com/s:300x300/55/174255-004-9A4971E9.jpg");
+        })
+
+        $('#chicken').hover(function () {
+            $('h2').text($(this).text());
+            $('#img1').attr("src", "https://www.bbcgoodfood.com/sites/default/files/styles/push_item/public/chicken-thumb.jpg?itok=tsEf4fFb");
+        })
+
+        $('#pig').hover(function () {
+            $('h2').text($(this).text());
+            $('#img1').attr("src", "https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/H-P/pig-fence.ngsversion.1396530611778.adapt.1900.1.jpg");
+        })
+
+        $('#cow').hover(function () {
+            $('h2').text($(this).text());
+            $('#img1').attr('src', 'https://cdn.britannica.com/s:300x300/55/174255-004-9A4971E9.jpg')
+        })
+    }
+    )
+</script>
+</body>
+</html>

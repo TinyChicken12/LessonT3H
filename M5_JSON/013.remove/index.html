@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="target" style="border: 1px solid red; margin-bottom: 5px; height: 335px;">
+    <p>The p</p>
+    <p>The p</p>
+    <p>The p</p>
+    <p>The p</p>
+</div>
+<button type="button" id="remove">Remove</button>
+<button type="button" id="empty">Empty</button>
+<script>
+    $(document).ready(function () {
+        $("#remove").click(function () {
+            $("#target").remove();
+        })
+
+        $("#empty").click(function () {
+            $("#target").empty();
+        })
+    })
+</script>
+</body>
+</html>

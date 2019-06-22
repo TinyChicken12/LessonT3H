@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình cắt chuỗi họ lót và tên</p>
+<input id="b1">
+<button type="button" onclick="bai14()">bai 14</button>
+<p id="target1"></p>
+<p id="target2"></p>
+<script>
+    function bai14() {
+        var str = document.getElementById("b1").value;
+        var arr = str.split(" ");
+        var name = arr[arr.length -1].toString();
+        arr.pop();
+        var lsMdName = arr.toString().replace(/,/g, " ");
+        document.getElementById("target1").innerText = "Name: " + name;
+        document.getElementById("target2").innerText = "LsMdName: " + lsMdName;
+    }
+</script>
+</body>
+</html>

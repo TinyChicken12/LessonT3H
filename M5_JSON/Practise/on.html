@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<input id="target">
+<button id="btn1">Check</button>
+<button id="btn2">Check</button>
+<button id="btn3">Check</button>
+<button id="btn4">Check</button>
+<script>
+    $(document).ready(function () {
+        $('button').on('click', function () {
+            $("#target").val("Hello jquery!");
+        })
+    })
+</script>
+</body>
+</html>

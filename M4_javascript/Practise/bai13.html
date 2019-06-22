@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình đảo vị trí từ đầu và từ cuối</p>
+<input id="b1">
+<button type="button" onclick="bai13()">bai 12</button>
+<p id="target"></p>
+<script>
+    function bai13() {
+        var str = document.getElementById("b1").value;
+        var arr = str.split(" ");
+        var temp = arr[0];
+        arr[0] = arr[arr.length - 1];
+        arr[arr.length - 1] = temp;
+        var res = arr.toString().replace(/,/g, " ");
+        alert(res);
+    }
+</script>
+</body>
+</html>

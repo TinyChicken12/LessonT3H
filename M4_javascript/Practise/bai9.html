@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Chương trình tìm kiếm 1 kí tự xem có trong chuỗi hay không, nếu có xuất ra vị trí của từ
+chứa kí tự đó
+</p>
+<p>Nhập chuỗi: <input id="b1"></p>
+<p>Nhập kí tự <input id="b2"></p>
+<button type="button" onclick="bai9()">bai 9</button>
+<script>
+    function bai9() {
+        var str = document.getElementById("b1").value;
+        var arr = str.split(" ");
+        var character = document.getElementById("b2").value;
+        for (var i = 0; i < arr.length; i++) {
+            var pos = arr[i].indexOf(character);
+            if (pos != -1){
+                alert(i+1);
+                break; //Để ngừng vòng lặp
+            }
+        }
+    }
+</script>
+</body>
+</html>

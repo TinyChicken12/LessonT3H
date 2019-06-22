@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<input type="text" id="in1">
+<h2 id="target"></h2>
+<button type="button" id="btn">Button</button>
+<script>
+    $(document).ready(function () {
+        $('#in1').on('keydown', function () {
+            var value = $('#in1').val();
+            $('#target').text(value);
+        })
+    })
+</script>
+</body>
+</html>

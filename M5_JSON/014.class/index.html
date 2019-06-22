@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <style type="text/css">
+        .add-background {
+            background :red;
+        }
+    </style>
+</head>
+<body>
+<div id="target" style="border: 1px solid red; margin-bottom: 5px; height: 335px;">
+<p>The p</p>
+<p>The p</p>
+<p>The p</p>
+<p>The p</p>
+</div>
+<button type="button" id="add">Add class</button>
+<button type="button" id="remove">Remove class</button>
+<button type="button" id="toggle">Toggle</button>
+<script>
+    $(document).ready(function () {
+        $("#add").click(function () {
+            $("#target").addClass("add-background");
+        });
+
+        $("#remove").click(function () {
+            $("#target").removeClass("add-background");
+        });
+
+        $("#toggle").click(function () {
+            $("#target").toggleClass("add-background");
+        })
+    })
+</script>
+</body>
+</html>

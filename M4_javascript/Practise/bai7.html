@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình đổi chữ xen kẽ 1 hoa 1 thường</p>
+<input id="b1">
+<button type="button" onclick="bai7()">bai 7</button>
+<p id="target"></p>
+<script>
+    function bai7() {
+        var str = document.getElementById("b1").value;
+        var arr = str.split('');
+        for (var i = 0; i< arr.length; i++) {
+            if (i % 2 == 0){
+                arr[i] = arr[i].toUpperCase();
+            }
+            else {
+                arr[i] = arr[i].toLowerCase();
+            }
+            var res = arr.toString();
+        }
+        document.getElementById("target").innerText = res.replace(/,/g, "");
+    }
+</script>
+</body>
+</html>

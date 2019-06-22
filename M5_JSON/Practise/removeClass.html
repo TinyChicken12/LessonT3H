@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <style>
+        a.test {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<a href="http://jquery.com/">jQuery</a>
+<script>
+    $(document).ready(function () {
+        $( "a" ).addClass( "test" );
+        $("a").click(function (event) {
+            alert( "As you can see, the link no longer took you to jquery.com" );
+            event.preventDefault();
+            $(this).hide();
+        })
+        $( "a" ).removeClass( "test" );
+    })
+</script>
+</body>
+</html>

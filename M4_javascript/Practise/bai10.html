@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Chương trình đếm 1 ký tự xuất hiện bao nhiêu lần trong chuỗi</p>
+<input id="b1">
+<input id="b2">
+<button type="button" onclick="bai10()">bai 10</button>
+<p id="target"></p>
+<script>
+    function bai10() {
+        var str = document.getElementById("b1").value;
+        var char = document.getElementById("b2").value;
+        var arr = str.split("");
+        var count = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].indexOf(char) != -1){
+                count ++;
+            }
+        }
+        alert(count);
+    }
+</script>
+</body>
+</html>
