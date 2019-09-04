@@ -1,0 +1,32 @@
+  ctrl + / : comment nhanh 1 dòng
+
+  Lấy dữ liệu từ SQL
+    SELECT tên_trường_1, tên_trường_2 ... FROM tên_bảng
+    nếu muốn lấy tất cả cột dữ liệu trong bảng đó sử dụng *
+    ví dụ lấy tất cả dữ liệu từ bảng customers
+    SELECT * FROM customers
+    ví dụ 2 lấy 1 số cột trong bảng customers
+    SELECT id,company,job_title FROM customers
+
+    -- cú pháp sql :để comment trong sql
+    ex : -- select * from customer;
+
+    LIMIT start,limit
+    SELECT tên cột FROM tên bảng WHERE điều kiện LIMIT bắt đầu từ bản ghi,số bản ghi lấy ra
+           lấy ra 5 khách hàng đầu tiên
+            SELECT * FROM customers LIMIT 0,10
+            ví dụ 3 :
+            lấy ra 5 khách hàng đầu tiên từ khách hàng thứ 2
+            SELECT * FROM customers LIMIT 1,5
+
+    Patterns sau TOÁN TỬ LIKE KHÔNG PHÂN BIỆT Hoa thường, dấu trong tiếng Việt:
+    SELECT * FROM employees WHERE last_name LIKE "t%"; --Chọn các khách hàng mà có họ bắt đầu bằng chữ t
+    --The same as:
+    SELECT * FROM employees WHERE last_name LIKE "T%";
+
+    SELECT * FROM employees WHERE last_name LIKE "%a" --Kết quả họ là "Tạ" vẫn dk select
+
+
+    Between thì đối với số thì lấy trong khoảng giá trị 2 số,
+    đố với chữ thì lấy giá trị trong khoảng các chữ theo alphabet,
+    đối với ngày tháng:     SELECT * FROM orders WHERE order_date BETWEEN '2006-01-01 00:00:00' AND '2006-03-01 00:00:00'

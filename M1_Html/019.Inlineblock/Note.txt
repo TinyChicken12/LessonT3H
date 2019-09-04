@@ -1,0 +1,4 @@
+display: inline;  //Các element liền kề nhau, KO set dk height width cho phần tử. xem ở file index.html, dù đã set height and width
+cho thẻ a nhưng thẻ a do thuộc tính vốn có là inline nên KO THAY ĐỔI DK HEIGHT VÀ WIDTH
+display: block;  //Các element ko liền kề nhau mà cách nhau bởi xuống dòng
+display: inline-block;  //Các element liền kề nhau và ko phân cách bởi dấu xuống dòng

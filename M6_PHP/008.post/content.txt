@@ -1,0 +1,2 @@
+Các biến $_GET, $_POST là các mảng bất tuần tự (mảng theo key):
+ Key: Bằng giá trị name ở trường input -> Muốn lấy giá trị input thì lấy theo key của mảng

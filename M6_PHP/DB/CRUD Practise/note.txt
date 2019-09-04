@@ -1,0 +1,17 @@
+index4, create2
+
+file index để thực hành lại, các file còn config tương tự, ở đây dùng PH0- Khác của thầy,
+do thế nên các câu để hiện thị cũng khác đôi chút về phương thức
+
+file 3 là file tự gõ
+
+khá chuối về vấn đề logic hiển thị trong câu while. Câu đó chỉ hiện thị 1 phần tbody (hiển thị tr chỗ in)
+
+cú pháp php kèm theo cũng khá chuối
+
+file index4.php là tự gõ hoàn chỉnh ok, ko cần nhìn gì
+
+file create.php lỗi do chưa đủ logic cho các trường, nếu thỏa mãn các trường thì tính tiếp đây chỉ đơn lẻ,
+nên giải quyết là nhét đống lỗi vào 1 mảng rồi else khi ko có lỗi
+
+file create2.php có giải thích rõ về các cú pháp dk sdung

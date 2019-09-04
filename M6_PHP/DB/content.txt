@@ -1,0 +1,8 @@
+Đối với kết nối dùng Mysqli
+    $connect = new mysqli($host, $username, $password);
+    if ($connect->connect_error) {  //Khá khác so với w3
+        die("Fail to connect!");
+    }
+    echo "Connect successfully!";
+
+Đối với PDO, ngắt kết nối bằng việc set biến $connect = null;

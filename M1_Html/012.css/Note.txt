@@ -1,0 +1,1 @@
+Khi nhập source của file or thư mục thì: ../ đại diện cho trở về cấp trước cấp hiện tại 1 bậc

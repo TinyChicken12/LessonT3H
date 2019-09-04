@@ -1,0 +1,31 @@
+Magic method:        echo "<br>" . __METHOD__;
+
+
+static: tĩnh, biến biến thành biến toàn cục, khi thay đổi giá trị của biến thì nó cũng thay đổi theo.
+Lợi ích: ko cần khởi tạo đối tượng cũng gọi đến được property or method của class
+
+
+private static $name;
+public static function an(){
+
+}
+
+* Gọi trong class:
+static::$ten
+self::$ten
+className::$ten
+
+static::$name;
+self::$name;
+Student::$name;
+
+*Gọi bên ngoài class
+- Với phương thức thì có thể gọi như bthng khi ko phải là static
+- Với thuộc tính thì CHỈ CÓ THÊ GỌI BẰNG: className::tenThuocTinh;
+
+
+
+***Final
+final class: Chỉ CÓ THỂ KHỞI TẠO VÀ KO THỂ KẾ THỪA CLASS NÀO MÀ LÀ final
+final method: KO THỂ GHI ĐÈ KHI 1 CLASS KẾ THỪA
+

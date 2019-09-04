@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" name="" value="What's"> What's
+<input type="checkbox" name="" value="your"> your
+<input type="checkbox" name="" value="name"> name
+<input type="checkbox" name="" value="?"> ?
+
+<script>
+    //get element type=checkbox
+    var checkArr = document.querySelectorAll("input[type=checkbox]");
+
+    //creat event then print on console log
+    //document.querySelector("input[type=checkbox]:checked").addEventListener('change', displayChange)
+    /*var str = "";
+    for (var i = 0; i < checkArr.length; i++) {
+        checkArr[i].addEventListener('change', function () {
+        str += checkArr[i] + "";
+        }
+        )
+        str = str.trim();
+        console.log(str);
+)*/
+    for (var i = 0; i < checkArr.length; i++) {
+        checkArr[i].addEventListener('change',function() {
+            var listChecked = document.querySelectorAll("input[type=checkbox]:checked");
+            var str = '';
+            for (var j = 0; j < listChecked.length; j ++){
+                str += listChecked[j].value + ' ';
+            }
+            str = str.trim();
+            console.log(str);
+        })
+    }
+</script>
+</body>
+</html>

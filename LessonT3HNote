@@ -1,0 +1,19 @@
+------------Date
+https://toidicode.com/xu-ly-ngay-thang-trong-php-73.html
+date_default_timezone_set('Asia/Ho_Chi_Minh');  //Set default múi giờ là Việt Nam và đặt ở trước
+Thời gian linux thì xem file của thầy:  https://github.com/dathalongbay/T3HGroup/tree/master/Private/1904e/M6_PHP/012.date
+https://www.w3schools.com/php/php_date.asp
+
+----------Session
+$_SESSION là biến global: LÀ 1 MẢNG lưu trữ giá trị của session theo key
+session_start() : Luôn đặt ở đầu file php để khởi tạo session
+$_SESSION["key"] : Gán giá trị cho session. ex: $_SESSION["name"] = "Phát";
+Sửa session thì overwrite lại nó
+Sửa giá trị của từng "giá trị" theo key dùng hàm : un_set($_SESSION["name"]);
+Xóa session thì dùng 2 hàm : session_unset() và hàm sesssion_destroy();`
+
+-----------include & require: Nạp file cho file hiện tại
+include thì nếu đường dẫn file KO TỒN TẠI thì câu lệnh dưới nó VẪN DK THỰC THI
+required thì nếu đường dẫn file KO TỒN TẠI thì câu lệnh dưới nó KO DK THỰC THI
+include_once: Check xem file đã include rồi thì ko nạp thêm file nữa
+Tương tự require_once

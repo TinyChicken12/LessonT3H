@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<script>
+    var y =[10, 20, 4, 5, 3, 1, 'z', 'x', {}, null, '100'];
+    //Hiển thị tất cả các giá trị của phần tử trong mảng và ktra xem nó có phải số hay không
+
+    //Hien thi gia tri phan tu trong mang
+    var arr = [];
+    var arr2 = [];
+    for(var i = 0; i < y.length; i++){
+        if(!isNaN(y[i]) && y[i] !== null) {
+            arr.push([y[i]]);
+            //console.log(str);
+            //debugger;
+        }
+        else{
+            arr2.push(y[i]);
+        }
+            }
+    document.getElementById('p1').innerText = 'Phan tu co gia tri so la: ' + arr;
+    document.getElementById('p2').innerText = 'Phan tu  khong co gia tri so la: ' + arr2;
+
+    //Hien thi cac so la chan hay le
+    var arr3 = [];
+    var arr4 = [];
+    for(var i = 0; i < y.length; i++) {
+        if (!isNaN(y[i]) && y[i] !== null && y[i] % 2 == 0) {
+            arr3.push([y[i]]);
+            //console.log(str);
+            //debugger;
+        }
+        else {
+            if (!isNaN(y[i]) && y[i] !== null){
+                arr4.push(y[i]);
+            }
+        }
+    }
+    document.getElementById('p3').innerText = 'Cac so chan la: ' + arr3;
+    document.getElementById('p4').innerText = 'Cac so le la: ' + arr4;
+</script>
+</body>
+</html>

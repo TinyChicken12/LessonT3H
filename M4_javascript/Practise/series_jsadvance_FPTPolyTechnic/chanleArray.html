@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Hiển thị các số lẻ trong mảng
+    var arr = [
+        1,
+        2,
+        4,
+        5,
+        'something',
+        {name: 'thienth'},
+        9,
+        6
+    ];
+    var arr2 = [];
+    for (var i = 0; i < arr.length; i++) {
+        if (!isNaN(arr[i])) {
+            if (arr[i] % 2 != 0) {
+                arr2.push(arr[i]);
+            }
+        }
+    }
+    document.write(arr2);
+</script>
+</body>
+</html>
